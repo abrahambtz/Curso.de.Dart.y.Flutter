@@ -1,3 +1,7 @@
+//Abraham Baltazar Garcia Moreno
+//19 de octubre 2020, Seccion 2 - Introduccion a Dart.
+/*Ejemplos utilizando el lenguaje de Dart SDK 2.10.2*/
+
 import 'dart:convert';
 
 void main() {
@@ -106,11 +110,6 @@ void main() {
   capitulo20();
   //Capitulo 21
   capitulo21();
-  
-  
-  
-  
-  
 }
 
 //Capitulo 13
@@ -255,48 +254,46 @@ mixins() {
   result += ba.getMessage();
 
   print(result);
-  
+
   print(ab is P);
   print(ab is A);
   print(ab is B);
 }
 
 //Capitulo 20
-void capitulo20(){
+void capitulo20() {
   final pato = new Pato();
   pato.nadar();
   pato.caminar();
   pato.volar();
-  
-  
-  
-}
-abstract class Animales{}
-
-abstract class Mamifero extends Animales{}
-abstract class Ave extends Animales{}
-abstract class Pez extends Animales{}
-
-abstract class Volador{
-  void volar()=>print("Estoy volando!!");
-}
-abstract class Caminante{
-  void caminar()=>print("Estoy caminando!!");
-}
-abstract class Nadador{
-  void nadar()=>print("Estoy nadando!!");
 }
 
+abstract class Animales {}
 
-class Delfin extends Mamifero with Nadador{}
-class Murcielago extends Mamifero with Caminante, Volador{}
-class Pato extends Ave with Caminante, Volador, Nadador{}
-class Pezvolador extends Pez with Volador, Nadador{}
+abstract class Mamifero extends Animales {}
 
-void capitulo21(){
-  
+abstract class Ave extends Animales {}
+
+abstract class Pez extends Animales {}
+
+abstract class Volador {
+  void volar() => print("Estoy volando!!");
 }
 
+abstract class Caminante {
+  void caminar() => print("Estoy caminando!!");
+}
 
+abstract class Nadador {
+  void nadar() => print("Estoy nadando!!");
+}
 
+class Delfin extends Mamifero with Nadador {}
 
+class Murcielago extends Mamifero with Caminante, Volador {}
+
+class Pato extends Ave with Caminante, Volador, Nadador {}
+
+class Pezvolador extends Pez with Volador, Nadador {}
+
+void capitulo21() {}

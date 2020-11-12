@@ -9,6 +9,8 @@ class ListPage extends StatefulWidget {
 
 class _ListPageState extends State<ListPage> {
   List<int> _listaNumeros = [10, 20, 30, 40, 50];
+  int _ultimoItem = 0;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +37,7 @@ class _ListPageState extends State<ListPage> {
   }
 
   void _agregar10() {
-    return;
+    for (var i = 0; i < ; i++) {    
+    }
   }
 }

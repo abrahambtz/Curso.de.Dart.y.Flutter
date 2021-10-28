@@ -19,7 +19,7 @@ class _ContadorPageState extends State<ContadorPage> {
           title: Text('Contador, App 1 - V2'),
           centerTitle: true,
           elevation: 10.00,
-          backgroundColor: Color(0xFFFB0000),
+          backgroundColor: Colors.blueGrey,
         ),
         body: Center(
           child: Column(

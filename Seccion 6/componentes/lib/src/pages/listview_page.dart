@@ -8,7 +8,7 @@ class ListPage extends StatefulWidget {
 }
 
 class _ListPageState extends State<ListPage> {
-  List<int> _listaNumeros = [10, 20, 30, 40, 50];
+  List<int> _listaNumeros;
   int _ultimoItem = 0;
 
   @override
@@ -37,7 +37,10 @@ class _ListPageState extends State<ListPage> {
   }
 
   void _agregar10() {
-    for (var i = 0; i < ; i++) {    
+    for (var i = 1; i < 10; i++) {
+      _ultimoItem++;
+      _listaNumeros.add(_ultimoItem);
     }
+    setState(() {});
   }
 }
